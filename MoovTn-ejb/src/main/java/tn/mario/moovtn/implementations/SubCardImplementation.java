@@ -15,7 +15,7 @@ import tn.mario.moovtn.remotes.SubCardService;
 @Stateless
 public class SubCardImplementation implements SubCardService {
 
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager em;
 	
 	@Override

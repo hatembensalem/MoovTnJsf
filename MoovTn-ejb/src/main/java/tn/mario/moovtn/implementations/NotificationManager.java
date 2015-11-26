@@ -20,7 +20,7 @@ import tn.mario.moovtn.remotes.NotificationManagerRemote;
 @Stateless
 
 public class NotificationManager implements NotificationManagerRemote, NotificationManagerLocal {
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
     EntityManager em;
     public NotificationManager() {
         

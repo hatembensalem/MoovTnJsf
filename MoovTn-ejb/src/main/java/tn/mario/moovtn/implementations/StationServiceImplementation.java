@@ -13,7 +13,7 @@ import tn.mario.moovtn.remotes.StationRemote;
 @Stateless
 public class StationServiceImplementation implements StationRemote{
 
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager entityManager;
 	
 	@Override

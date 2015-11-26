@@ -14,7 +14,7 @@ import tn.mario.moovtn.remotes.LineRemote;
 @Stateless
 public class LineServiceImplementation implements LineRemote {
 
-	@PersistenceContext(unitName = "persist")
+	@PersistenceContext
 	private EntityManager entityManager;
 
 	@Override

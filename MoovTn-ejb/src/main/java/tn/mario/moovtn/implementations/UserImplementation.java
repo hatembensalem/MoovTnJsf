@@ -16,7 +16,7 @@ import tn.mario.moovtn.remotes.UserService;
 
 @Stateless
 public class UserImplementation implements UserService {
-	@PersistenceContext(unitName = "persist")
+	@PersistenceContext
 	EntityManager em;
 
 	@Override

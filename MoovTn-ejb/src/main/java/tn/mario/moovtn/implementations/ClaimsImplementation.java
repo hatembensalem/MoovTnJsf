@@ -14,7 +14,7 @@ import tn.mario.moovtn.remotes.IClaimsImplementationRemote;
 
 @Stateless
 public class ClaimsImplementation  implements IClaimsImplementationRemote{
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager entityManager;
 	@Override
 	public void addClaims(Claim c) {

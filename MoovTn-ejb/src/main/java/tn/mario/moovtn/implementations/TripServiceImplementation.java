@@ -16,7 +16,7 @@ import tn.mario.moovtn.remotes.TripRemote;
 @Stateless
 public class TripServiceImplementation implements TripRemote{
 	
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager entityManager;
 
 	@Override

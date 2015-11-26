@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
 	<persistence-unit name="MoovTn-ejb">
-		<jta-data-source>java:/MySqlDS</jta-data-source>
+		<jta-data-source>java:/transport</jta-data-source>
+		<class>tn.mario.moovtn.entities.Claim</class>
+		<class>tn.mario.moovtn.entities.Line</class>
+		<class>tn.mario.moovtn.entities.Location</class>
+		<class>tn.mario.moovtn.entities.Notification</class>
+		<class>tn.mario.moovtn.entities.Rent</class>
+		<class>tn.mario.moovtn.entities.Station</class>
+		<class>tn.mario.moovtn.entities.SubscriptionCard</class>
+		<class>tn.mario.moovtn.entities.TransportMean</class>
+		<class>tn.mario.moovtn.entities.Trip</class>
+		<class>tn.mario.moovtn.entities.User</class>
 		<properties>
-			<property name="hibernate.hbm2ddl.auto" value="create-drop"/>
+			<property name="hibernate.hbm2ddl.auto" value="validate"/>
 		</properties>
 	</persistence-unit>
 </persistence>

@@ -21,7 +21,7 @@ import tn.mario.moovtn.remotes.RentService;
 @Stateless
 public class RentImplementation implements RentService {
 	
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager entityManager;
 	
 	 

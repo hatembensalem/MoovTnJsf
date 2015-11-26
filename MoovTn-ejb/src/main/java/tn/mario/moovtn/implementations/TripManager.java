@@ -19,7 +19,7 @@ import tn.mario.moovtn.remotes.TripManagerRemote;
 @Stateless
 @LocalBean
 public class TripManager implements TripManagerRemote, TripManagerLocal {
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
     EntityManager em;
     /**
      * Default constructor. 

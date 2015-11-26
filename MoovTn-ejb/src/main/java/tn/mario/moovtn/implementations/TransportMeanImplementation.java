@@ -19,7 +19,7 @@ import tn.mario.moovtn.remotes.TripRemote;
 @Stateless
 public class TransportMeanImplementation implements TransportMeanService{
 	
-	@PersistenceContext(unitName="persist")
+	@PersistenceContext
 	EntityManager entityManager;
 	
 	@EJB
